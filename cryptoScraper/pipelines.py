@@ -15,7 +15,7 @@ class MongoDbPipeline(object):
 
     def __init__(self):
 
-        self.mongo_uri =  'mongod://localhost:27017'
+        self.mongo_uri =  'mongodb+srv://hamedpoor:81980630@hpcluster.2yhbryy.mongodb.net/?retryWrites=true&w=majority'
         self.mongo_db = 'crypto'
     def open_spider(self,spider):
         self.client = MongoClient(self.mongo_uri)
